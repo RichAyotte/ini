@@ -68,15 +68,15 @@ Null Object {
 exports[`test/foo.js TAP encode from data > must match snapshot 1`] = `
 o=p
 a with spaces=b  c
-" xa  n          p "="\\"\\r\\nyoyoyo\\r\\r\\n"
-"[disturbing]"=hey you never know
+xa  n          p="\\"\\r\\nyoyoyo\\r\\r\\n"
+[disturbing]=hey you never know
 s=something
 s1="something'
 s2=something else
 s3=
 s4=
-s5="   "
-s6=" a "
+s5=
+s6=a
 s7=true
 true=true
 false=false
@@ -87,13 +87,13 @@ ar[]=one
 ar[]=three
 ar[]=this is included
 br=warm
-eq="eq=eq"
+eq=eq=eq
 
 [a]
 av=a val
 e={ o: p, a: { av: a val, b: { c: { e: "this [value]" } } } }
 j="\\"{ o: \\"p\\", a: { av: \\"a val\\", b: { c: { e: \\"this [value]\\" } } } }\\""
-"[]"=a square?
+[]=a square?
 cr[]=four
 cr[]=eight
 
@@ -112,34 +112,34 @@ noHashComment=this\\# this is not a comment
 `
 
 exports[`test/foo.js TAP encode with align > must match snapshot 1`] = `
-o                    = p
-a with spaces        = b  c
-" xa  n          p " = "\\"\\r\\nyoyoyo\\r\\r\\n"
-"[disturbing]"       = hey you never know
-s                    = something
-s1                   = "something'
-s2                   = something else
-s3                   = 
-s4                   = 
-s5                   = "   "
-s6                   = " a "
-s7                   = true
-true                 = true
-false                = false
-null                 = null
-undefined            = undefined
-zr[]                 = deedee
-ar[]                 = one
-ar[]                 = three
-ar[]                 = this is included
-br                   = warm
-eq                   = "eq=eq"
+o                = p
+a with spaces    = b  c
+xa  n          p = "\\"\\r\\nyoyoyo\\r\\r\\n"
+[disturbing]     = hey you never know
+s                = something
+s1               = "something'
+s2               = something else
+s3               = 
+s4               = 
+s5               = 
+s6               = a
+s7               = true
+true             = true
+false            = false
+null             = null
+undefined        = undefined
+zr[]             = deedee
+ar[]             = one
+ar[]             = three
+ar[]             = this is included
+br               = warm
+eq               = eq=eq
 
 [a]
 av   = a val
 e    = { o: p, a: { av: a val, b: { c: { e: "this [value]" } } } }
 j    = "\\"{ o: \\"p\\", a: { av: \\"a val\\", b: { c: { e: \\"this [value]\\" } } } }\\""
-"[]" = a square?
+[]   = a square?
 cr[] = four
 cr[] = eight
 
@@ -158,31 +158,31 @@ noHashComment = this\\# this is not a comment
 `
 
 exports[`test/foo.js TAP encode with align and sort > must match snapshot 1`] = `
-" xa  n          p " = "\\"\\r\\nyoyoyo\\r\\r\\n"
-"[disturbing]"       = hey you never know
-a with spaces        = b  c
-ar[]                 = one
-ar[]                 = three
-ar[]                 = this is included
-br                   = warm
-eq                   = "eq=eq"
-false                = false
-null                 = null
-o                    = p
-s                    = something
-s1                   = "something'
-s2                   = something else
-s3                   = 
-s4                   = 
-s5                   = "   "
-s6                   = " a "
-s7                   = true
-true                 = true
-undefined            = undefined
-zr[]                 = deedee
+xa  n          p = "\\"\\r\\nyoyoyo\\r\\r\\n"
+[disturbing]     = hey you never know
+a with spaces    = b  c
+ar[]             = one
+ar[]             = three
+ar[]             = this is included
+br               = warm
+eq               = eq=eq
+false            = false
+null             = null
+o                = p
+s                = something
+s1               = "something'
+s2               = something else
+s3               = 
+s4               = 
+s5               = 
+s6               = a
+s7               = true
+true             = true
+undefined        = undefined
+zr[]             = deedee
 
 [a]
-"[]" = a square?
+[]   = a square?
 av   = a val
 cr[] = four
 cr[] = eight
@@ -238,14 +238,14 @@ Array [
 `
 
 exports[`test/foo.js TAP encode with sort > must match snapshot 1`] = `
-" xa  n          p "="\\"\\r\\nyoyoyo\\r\\r\\n"
-"[disturbing]"=hey you never know
+xa  n          p="\\"\\r\\nyoyoyo\\r\\r\\n"
+[disturbing]=hey you never know
 a with spaces=b  c
 ar[]=one
 ar[]=three
 ar[]=this is included
 br=warm
-eq="eq=eq"
+eq=eq=eq
 false=false
 null=null
 o=p
@@ -254,15 +254,15 @@ s1="something'
 s2=something else
 s3=
 s4=
-s5="   "
-s6=" a "
+s5=
+s6=a
 s7=true
 true=true
 undefined=undefined
 zr[]=deedee
 
 [a]
-"[]"=a square?
+[]=a square?
 av=a val
 cr[]=four
 cr[]=eight
