@@ -2,7 +2,7 @@
   "author": "GitHub Inc.",
   "name": "@richayotte/ini",
   "description": "An ini encoder/decoder for node",
-  "version": "4.1.6",
+  "version": "4.1.7",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
@@ -11,12 +11,11 @@
   "main": "lib/ini.js",
   "scripts": {
     "eslint": "eslint",
-    "lint": "eslint \"**/*.{js,cjs,ts,mjs,jsx,tsx}\"",
+    "lint": "eslint \"**/*.{js,cjs,mjs,jsx,tsx}\"",
     "lintfix": "npm run lint -- --fix",
     "test": "tap",
     "snap": "tap",
     "posttest": "npm run lint",
-    "postlint": "template-oss-check",
     "template-oss-apply": "template-oss-apply --force"
   },
   "devDependencies": {
